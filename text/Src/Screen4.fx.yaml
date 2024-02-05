@@ -1,0 +1,30 @@
+Screen4 As screen:
+
+    Container1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =Parent.Height
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Button2 As button:
+            Height: =70
+            Size: =24
+            Text: ="Nút"
+            Width: =280
+            X: =186
+            Y: =435
+            ZIndex: =1
+
+        Component1_1 As Component1:
+            ZIndex: =2
+
+        Component1_2 As Component1:
+            ZIndex: =3
+
+        Component1_3 As Component1:
+            ZIndex: =4
+
