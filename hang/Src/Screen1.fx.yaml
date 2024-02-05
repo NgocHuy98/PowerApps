@@ -1,0 +1,13 @@
+Screen1 As screen:
+    Fill: =Color.Aqua
+
+    Button1 As button:
+        Height: =70
+        OnSelect: =Navigate(Screen2, ScreenTransition.Fade)
+        Size: =24
+        Text: ="Next "
+        Width: =280
+        X: =177
+        Y: =243
+        ZIndex: =1
+
