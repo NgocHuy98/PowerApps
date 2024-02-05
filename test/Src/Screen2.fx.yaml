@@ -1,0 +1,12 @@
+Screen2 As screen:
+
+    Button1_1 As button:
+        Height: =70
+        OnSelect: =Navigate(Screen3,ScreenTransition.Cover)
+        Size: =24
+        Text: ="Next"
+        Width: =280
+        X: =177
+        Y: =243
+        ZIndex: =1
+
