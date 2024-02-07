@@ -1,0 +1,20 @@
+{
+  "d7948cf5-c0b1-4199-9cf0-761473219957": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "GitHub",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1674/1.0.1674.3602/github/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_github",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "GitHub"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d7948cf5-c0b1-4199-9cf0-761473219957"
+  }
+}

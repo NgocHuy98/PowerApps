@@ -1,0 +1,94 @@
+Screen1 As screen:
+    Fill: =
+
+    Button2 As button:
+        Height: =70
+        OnSelect: =Navigate(Screen2)
+        Size: =24
+        Text: ="Next screen 2"
+        Width: =280
+        X: =207
+        Y: =420
+        ZIndex: =1
+
+    DatePicker1 As datepicker:
+        Height: =70
+        Size: =24
+        Width: =575
+        X: =40
+        Y: =40
+        ZIndex: =2
+
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        HeadingSize: =21
+        Height: =500
+        Items: =Filter(Accounts, 'Accounts (Views)'.'My Active Accounts')
+        Size: =21
+        Width: =640
+        X: =0
+        Y: =522
+        ZIndex: =3
+
+        phoneNumber As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Main Phone"
+            FieldName: ="telephone1"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.'Main Phone'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =0
+
+        address As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: |-
+                ="Address 1: City"
+            FieldName: ="address1_city"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: |-
+                =ThisItem.'Address 1: City'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =0
+
+        contact As dataTableColumn.complexTypeColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Primary Contact"
+            FieldName: ="primarycontactid"
+            FieldVariantName: ="complexTypeColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.'Primary Contact'.contactid
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =0
+
+        username As dataTableColumn.textualColumn:
+            AutoWidth: =true
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Account Name"
+            FieldName: ="name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            IsHyperlink: =false
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.'Account Name'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
